@@ -38,7 +38,7 @@
                 
                 parte1 = i.find(".row").append("<div class='col-md-6'><div class='form-group'><label class='control-label'>Nombre de la actividad</label><input class='form-control' placeholder='Ingrese nombre' type='text' name='nombre-actividad'/></div></div>").append("<div class='col-md-6'><div class='form-group'><label class='control-label'>Tipo de actividad</label>");
                 
-                parte2 = ("<select class='form-control' name='tipo-actividad'>");
+                parte2 = i.find(".row").append("<select class='form-control' name='tipo-actividad'>");
                 mydata.forEach(tipos=>{
                     parte2.append(`<option value="${tipos.ID}" >${tipos.nombre}</option>`);
                 });
